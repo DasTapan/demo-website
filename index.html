@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,90 @@
     <title>Nvidia Corporation</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    
+    <div class="header">
+        <p>Solving problems since 1985</p>
+    </div>
+    <div class="content">
+        <div class="side-bar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#enquiry">Enquiry</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="child" id="home">
+                <iframe src="https://www.youtube.com/embed/35npVaFGHMY" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam facere sunt officiis quisquam alias
+                    magnam, ullam fugit ipsa aliquam nihil eligendi accusamus doloremque architecto dolorem amet
+                    provident. Nisi, labore distinctio.
+                </div>
+            </div>
+            <div class="child" id="about">
+                <div class="thumbnail">
+                    <img src="./img/about.png" alt="About Us">
+                </div>
+                <div class="card">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus porro pariatur velit blanditiis
+                    ullam consectetur at animi nemo, provident quam. Corporis temporibus ut culpa at similique explicabo
+                    tempore cumque labore!
+                </div>
+            </div>
+            <div class="child" id="services">
+                <div class="thumbnail">
+                    <img src="./img/services.png" alt="Services">
+                </div>
+                <div class="card">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nobis maiores dolor voluptatibus
+                    nesciunt unde laborum eligendi cum veritatis voluptate illo esse perspiciatis odit, itaque magnam
+                    hic qui aliquam vel!
+                </div>
+            </div>
+            <div class="child" id="contact">
+                <div class="contact-detail">
+                    <p>Melvin Porter</p>
+                    <p>P.O. Box 132 1599 Curabitur Rd.</p>
+                    <p>Bandera South Dakota 45149</p>
+                    <p>(959) 119-8364</p>
+                </div>
+            </div>
+            <div class="child" id="enquiry">
+                <div class="enq-form">
+                    <form action="#" method="post">
+                        <p>
+                            <label for="first-name">First Name:</label>
+                            <input type="text" id="first-name" name="f-name" placeholder="Jacob">
+                        </p>
+
+                        <p>
+                            <label for="last-name">Last Name:</label>
+                            <input type="text" id="last-name" name="l-name" placeholder="Williams">
+                        </p>
+
+                        <p>
+                            <label for="mail">E-Mail:</label>
+                            <input type="email" id="mail" name="e-mail" placeholder="jwilliams@gmail.com">
+                        </p>
+                        <p>
+                            <label for="comment">Enquiry:</label>
+                            <textarea name="comment" id="comment" placeholder="Your enquiry here"></textarea>
+                        </p>
+                        <div class="btn">
+                            <button type="submit">Submit</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

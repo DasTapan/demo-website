@@ -1,0 +1,219 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aqua;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div.header {
+    height: 60px;
+    background-color: gray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: aliceblue;
+    font-size: 40px;
+    text-align: center;
+    font-style: italic;
+}
+
+div.header p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* side bar begins here*/
+div.side-bar {
+    width: 200px;
+    background-color: mediumslateblue;
+    height: calc(100vh - 60px);
+    position: fixed;
+    left: 0;
+}
+
+div.side-bar ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin-top: 80px;
+}
+
+ul li {
+    margin-bottom: 25px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: xx-large;
+    color: whitesmoke;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* side bar ends here */
+
+div.content {
+    margin-top: 60px;
+    display: flex;
+}
+
+div.main {
+    background-color: aliceblue;
+    flex-grow: 1;
+    margin-left: 200px;
+}
+
+#home {
+    background-color: inherit;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+iframe {
+    width: 75%;
+    height: 60%;
+}
+
+div.child {
+    background-color: inherit;
+    width: 96%;
+    height: 99vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.card {
+    width: 88%;
+    height: 23%;
+    background-color: inherit;
+    border-radius: 10px;
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 40px;
+    line-height: 30px;
+    font-weight: bold;
+    color: slateblue;
+}
+
+div.thumbnail {
+    /* background-color: orange; */
+    height: 60%;
+    width: 75%;
+    /* background-image: url("./img/about.png"); */
+    /* background-size: stretch; */
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+div.contact-detail {
+    width: 85%;
+    height: 60%;
+    border-radius: 5px;
+    background-color: gainsboro;
+    color: indigo;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+div.contact-detail p {
+    margin-left: 35%;
+}
+
+div.enq-form {
+    width: 45%;
+    height: 80%;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+    background-color: #F6F7F8;
+    border-radius: 5px;
+    border: 1px solid #D6D9DC;
+    padding: 40px;
+}
+
+form p {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+form p input[type='text'] {
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+form p label {
+    margin-bottom: 15px;
+}
+
+form p input[type='text']:invalid,
+form p input[type='email']:invalid {
+    border: 1px solid #D55C5F;
+    color: #D55C5F;
+    box-shadow: none;
+    /* Remove default red glow in Firefox */
+}
+
+form p input textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+}
+
+div.btn button {
+    font-size: 16px;
+    font-weight: bold;
+
+    color: #FFFFFF;
+    background-color: #5995DA;
+
+    border: none;
+    border-radius: 3px;
+
+    padding: 5px 27px;
+    cursor: pointer;
+}
+
+div.btn button:hover {
+    background-color: #76AEED;
+}
+
+div.btn button:active {
+    background-color: #407FC7;
+}
